@@ -36,7 +36,7 @@ public class HomePage extends CommonPageObject {
         Returns: N/A
     */
     public void accessWebsite() {
-        getDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         getDriver().manage().window().maximize();
         open();
     }
