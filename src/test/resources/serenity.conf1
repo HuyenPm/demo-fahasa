@@ -1,0 +1,13 @@
+webdriver{
+  driver=firefox
+}
+drivers {
+  windows {
+//    webdriver.chrome.driver = src/test/resources/webdriver/chromedriver.exe
+    webdriver.firefox.driver = src/test/resources/webdriver/geckodriver.exe
+  }
+}
+chrome_preferences {
+    profile_default_content_settings.popups = 0
+    profile.default_content_setting_values.notifications = 2
+}
